@@ -1369,12 +1369,12 @@ def CreateList(thisLevel,rawSubList=None,Exit=True):
         results,outList=CreateStateList()
 
     if thisLevel=='county':
-        results,outList=CreateRegionList(F.CountyShapeFile,F.CountyVariableDict,rawSubList,regionLevel=thisLevel,
-                                    inputAreaScaleFactor=F.CountyinputAreaScaleFactor)
+        results,outList=CreateRegionList(F.countyShapeFile,F.countyVariableDict,rawSubList,regionLevel=thisLevel,
+                                    inputAreaScaleFactor=F.countyinputAreaScaleFactor)
 
     if thisLevel=='municipal':
-        results,outList=CreateRegionList(F.MunicipalShapeFile,F.MunicipalVariableDict,rawSubList,regionLevel=thisLevel,
-                                    inputAreaScaleFactor=F.MunicipalinputAreaScaleFactor)
+        results,outList=CreateRegionList(F.municipalShapeFile,F.municipalVariableDict,rawSubList,regionLevel=thisLevel,
+                                    inputAreaScaleFactor=F.municipalinputAreaScaleFactor)
     
     if thisLevel=='VTD':
         results,outList=CreateRegionList(F.VTDShapeFile,F.VTDVariableDict,rawSubList,regionLevel=thisLevel,
