@@ -206,8 +206,6 @@ def forcedRegionExclusions(inTupleList,inDict):
                     G.boundaryLengthDict[newCode]=deepcopy(G.boundaryLengthDict.pop(excl[1]))
                     for btranspose in set(G.boundaryLengthDict[newCode].keys())-{'Outside'}:
                         G.boundaryLengthDict[btranspose][newCode]=G.boundaryLengthDict[newCode][btranspose]
-                        del G.boundaryLengthDict[btranspose][excl[1]]
-
 
         else:
             if G.verbose: print('  Region not found. No exclusion: ',excl[0])
